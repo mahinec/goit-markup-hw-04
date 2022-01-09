@@ -63,8 +63,12 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
     
+}
+
+.header-title-highlight {
+    color: var(--accent-color);
 }
 
 .header-link {
@@ -137,7 +141,14 @@ img {
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
 }
+
+
 .solutions-btn {
     font-family: inherit;
     font-weight: 700;
@@ -232,7 +243,8 @@ margin-right: 30px ;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px
+    border-radius: 0px 0px 4px 4px;
+    
 }
 .team-card:not(:last-child) {
 margin-right: 30px;
@@ -248,14 +260,19 @@ margin-right: 30px;
     background-color: #F5F4FA;
 }
 
+.team-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
-    margin-bottom: 50px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .teammate-title {
@@ -264,9 +281,9 @@ margin-right: 30px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
-    margin-top: 30px;
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;
+    
 }
 
 .teammate-position {
@@ -275,7 +292,7 @@ margin-right: 30px;
     letter-spacing: 0.03em;
     color: #757575;
     text-align: center;
-    margin-bottom: 30px;
+    
     
 }
 
