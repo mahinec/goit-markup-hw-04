@@ -50,10 +50,14 @@ img {
 
 .header-list {
     display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .header-connect {
     margin-left: auto;
+    display: flex;
+    
 }
 
 .header-item:not(:last-child) {
@@ -78,6 +82,8 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-email  {
@@ -97,7 +103,14 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 } 
+
+.tel-icon {
+        margin-right: 10px;
+}
 
 .header-title {
     font-family: "Raleway", sans-serif;
@@ -119,6 +132,7 @@ img {
 .header-tel:hover, 
 .header-tel:focus  {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /*---------------------SOLUTIONS---------------------*/
